@@ -31,8 +31,17 @@
   "terminal.integrated.fontFamily": "'Maple Mono NF CN', Consolas, monospace",
   "terminal.integrated.fontSize": 13,
 
-  "lldb.useNativePDBReader": true,
-
+  "qt-qml.qmlls.enabled": true,
+  "qt-qml.qmlls.customExePath": "C:/Qt/6.11.1/msvc2022_64/bin/qmlls.exe",
+  "qt-qml.qmlls.additionalImportPaths": ["${workspaceFolder}/build/debug/src"],
+  "qt-qml.qmlls.customArgs": [
+    "-b${workspaceFolder}/build/debug",
+    "-dC:/Qt/Docs/Qt-6.11.1"
+  ],
+  "qt-qml.qmlls.useNoCMakeCalls": true,
+  "qt-qml.qmlls.traceLsp": "messages",
+  "qt-qml.qmlls.verboseOutput": true,
+  "qt-qml.preview.additionalBuildDirs": ["${workspaceFolder}/build/debug"],
   "[cpp]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   }
